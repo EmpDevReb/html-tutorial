@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- The <script> tag ise used to for client side script(JavaScript) -->
+<h2>We are here to Java teh SCRIPT!!!!</h2>
+<p> "THIS IS THE Java the Script paragraph of doommmmm!!!! </p>
+
+<p id="JavScrip"></p>
+<!-- We can make a Button to show text -->
+<button type="button" onclick="myFunction()">Don't Click</button></button>
+<!-- The Button can change colors -->
+<button type="button" onclick="myFunction2()">Don't Click Please</button></button>
+
+<h1>Don't change the Porsche</h1>
+<p>PLEASE DON"T</p>
+<!-- This is the orginal Pic -->
+<img id="PorscheImg" src="911 GT2 RS.jpg" width="192" height="108">
+<!-- These buttons change the Picture -->
+<p>
+<button type="button" onclick="PorscheFunc(1)">918</button>
+<button type="button" onclick="PorscheFunc(0)">GT3</button>
+</p>
+
+<script>
+// This function revials the text.
+function myFunction() {
+document.getElementById("JavScrip").innerHTML = "THIS IS THE SCRIPT!!";
+}
+
+// This function changes the text.
+function myFunction2() {
+  document.getElementById("JavScrip").style.fontSize = "25px"; 
+  document.getElementById("JavScrip").style.color = "pink";
+  document.getElementById("JavScrip").style.backgroundColor = "green";
+}
+// This function changes the porsches pictures
+function PorscheFunc(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "911 GT2 RS.jpg"
+  } else {
+    pic = "images/Porsche.jpg"
+  }
+  document.getElementById('PorscheImg').src = pic;
+}
+</script> 
+
+</body>
+</html>
+
