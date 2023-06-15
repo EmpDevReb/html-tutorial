@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Only myHead is is styled */
+#myHead {
+  background-color: grey;
+  color: darkorange;
+  padding: 22px;
+  text-align: right;
+}
+/* All elements with Planet have style */
+.Planet{
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<p>BLA THE BLAAAAAAA BLAAAAAAAAAAAAA</p>
+<!-- id attribute specifies a unique for an element. -->
+<!-- Must be unique within the HTML document. -->
+<!-- cannot start with number nor contain whitespace -->
+<!-- Can only id one HTML element -->
+<h1 id="myHead">My IDed header</h1>
+
+    <h2 class="Planet"><span class="note">Hawaii</span> City</h2>
+    <p>Nova is the capital of England.</p>
+ 
+    <h2 class="Planet">Defiance</h2>
+    <p>Defiance is the capital of Takavin.</p>
+ 
+    <h2 class="Planet">DC</h2>
+    <p class="Planet">DC is the capital of USAR.</p>
+
+    <!-- Can use id to set up a link to bookmark with in page -->
+    <p><a href="#Planet2">Jump to Fake City 2</a></p>
+
+<!-- Can use Java Script to manipulate text with the getElementById() method-->
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHead").innerHTML = "The ID of the Head";
+}
+</script>
+    
+    <h2 >Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2 >Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City4</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City555</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City11</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+
+    <h2>Fake City</h2>
+    <p >Fake City the city of above</p>
+<!-- Here is the link end -->
+    <h2 id="Planet2">Fake City2</h2>
+    <p >Fake City the city of above</p>
+
+
+</body>
+</html>
