@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- This is commented out but you can uncomment it for height and width with style attribute example -->
+<!-- <style>
+img {
+width: 100%;
+}
+</style> -->
+
+<!-- Basic HTML Image -->
+<h2>HTML No Happy</h2>
+<img src="No happy Endings.jpg" alt="No Happy" width="400" height="300">
+
+<!-- Html Image Syntax -->
+<!-- <img> tag is used to embed an image in a web page. -->
+<!-- <img> holds space for image link is not the image that is linked in. -->
+<!-- <img> tag has two required attributes. -->
+
+<!-- Working Link -->
+<!-- src - Specifies the path to image -->
+<p>Working Image</p>
+<img src="Tanya.jpg" alt="Tanya" width="130" height="130">
+
+<!-- Broken link -->
+<!-- alt - Specifies an alternate text for image -->
+<p>Broken Image</p>
+<img src="Tany.jpg" alt="Tanya" width="130" height="130">
+
+<!-- Image Size - Width and Height -->
+<p>Height and Width adjusted of the picture</p>
+<img src="Then it's only me.jpg" alt="Only me" style="width:700px;height:600px;">
+
+<!-- Also with width height attributes -->
+<img src="Then it's only me.jpg" alt="Only me" width="600" height="700">
+
+<!-- Can use style attribute and recomened for to prevent style sheet from changing the image size -->
+<p>Using an image without style attribute.</p>
+<img src="Tanya.jpg" alt="Tanya" width="118" height="118">
+
+<!-- Using style attribute instead of width and height -->
+<p>Using style attribute to adjust image</p>
+<img src="Tanya.jpg" alt="Tanya" style="width:118px;height:118px;">
+
+<!-- Images in Another Folder -->
+<!-- Can have images in a subfolder linked -->
+<p>Folder Link Image</p>
+<img src="images/Porsche.jpg" alt="918 Porsche" style="width:188px;height:188px;">
+
+<!-- Images on another server/website -->
+<!-- Can point to an image on another server but must use absolute(full) ULR in src attribute -->
+<p>Image from another site</p>
+<img src="https://www.myabandonware.com/media/screenshots/n/need-for-speed-porsche-unleashed-iq5/webp/need-for-speed-porsche-unleashed_1.webp" alt="Porsche Unleashed">
+
+<!-- Animated Images - HTML allows animated GIFs -->
+<p>This is a small gif</p>
+<img src="So it begins.gif" alt="It begins" style="width:100px;height:50px;">
+
+<!-- Image as a link - put <img> in the <a> tag -->
+<a href="https://www.caranddriver.com/porsche/911-gt2-rs">
+  <img src="911 GT2 RS.jpg" alt="caranddriver review GT2 RS" style="width:200px;height:140px;">
+</a>
+
+<!-- Floating Images  -->
+<h2>Floating Images</h2>
+<p><strong>Float the image to the right:</strong></p>
+
+<!-- Using the CSS float property to let iamge float left or right of a text: -->
+<p>
+<img src="Tanya.jpg" alt="Tanya" style="float:right;width:80px;height:80px;">
+A paragraph with a floating image. Should be to the Right.... Tanya maybe.
+</p>
+
+<!-- Using the CSS float property to let iamge float left or right of a text: -->
+<p><strong>Float the image to the left:</strong></p>
+<p>
+<img src="911 GT2 RS.jpg" alt="GT2 RS" style="float:left;width:100px;height:50px;">
+A paragraph with a floating image. Should be a GT2 RS to the left
+</p>
+
+
+</body>
+</html>
