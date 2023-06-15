@@ -21,8 +21,13 @@
 <button type="button" onclick="PorscheFunc(0)">GT3</button>
 </p>
 
+<noscript>Sorry, your browser does not support THE SCRIPTScript!</noscript>
+<p id="demo"></p>
+<p>A browser that can't support JavaScript should show text above.</p>
+
 <script>
 // This function revials the text.
+document.getElementById("demo").innerHTML = "THIS IS THE SCRIPPTY";
 function myFunction() {
 document.getElementById("JavScrip").innerHTML = "THIS IS THE SCRIPT!!";
 }
