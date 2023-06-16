@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>The Inputs Elements</h2>
+<!-- <form> element can contain one or more elements -->    
+<form action="/action_page.php">
+  <!-- <label> element defines a label for several form elements. -->
+  <!-- Useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element. -->
+  <!-- The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox. -->
+  <label for="fname">Fake names:</label><br>
+  <!-- The <input> element can be displayed in several ways, depending on type attribute -->
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<!-- The <select> Element -->
+<p>The select element defines a drop-down list:</p>
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <!-- size attribute specify the number of visable values -->
+  <!-- Also include the option to select more than one with mutliple attribute -->
+  <select id="cars" name="cars" size="2" multiple>
+    
+    <!-- <option> elements defines an option that can be selected defaults in drop down list -->
+    <option value="porsche">911</option>
+    <option value="lambo">Murci</option>
+    
+    <!-- selected attribute to the option you want -->
+    <option value="ford" selected>F-250</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h2> This is textarea element area below</h2>
+
+<!-- This is area defines  -->
+<form action="/action_page.php">
+  <!-- Can Also define this with CSS -->
+  <textarea name="message" rows="13" cols="40">My dam cat wants to play outside.</textarea>
+  <br><br>
+  <input type="submit">
+</form>
+
+<!-- <button> element defines a clickable button -->
+
+<h2>The button of doom</h2>
+
+<button type="button" onclick="alert('Its the end of the world')">Don't Click Me!</button>
+
+<!-- The <fieldset> and <legend> elements -->
+<h2>A group form</h2>
+
+<form action="/action_page.php">
+  
+  <!-- The <fieldset> element used to group related data in a form -->
+  <fieldset>
+    
+    <!-- The <legend> element defines a caption for the <fieldset> -->
+    <legend>Personas:</legend>
+    <label for="fname">Fake names:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Long names:</label><br>
+    <input type="text" id="lname" name="lname" value="Dick"><br><br>
+    <input type="submit" value="Submit">
+   </fieldset>
+</form>
+
+<!-- The <datalist> element -->
+<h2>The datalist elements</h2>
+
+<form action="/action_page.php">
+  
+  <!-- The <datalist> element specifies a list of pre-defined options for <input> element -->
+  <input list="Endgames" name="Endgame">
+  <datalist id="Endgames">
+    <option value="Final game">
+    <option value="Death game">
+    <option value="Fall game">
+    <option value="Time game">
+    <option value="Edge game">
+  </datalist>
+  <input type="submit">
+</form>
+
+<!-- The <output> element -->
+
+<h2>The output Element</h2>
+
+<form action="/action_page.php"oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  500 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <!-- This <output> element represents the result of a calculation -->
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+
+
+
+
+</body>
+</html>
+    
