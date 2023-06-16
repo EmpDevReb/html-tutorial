@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h2>Basic input text</h2>
+  <h2>Basic input text</h2>
 
-<form action="/action_page.php">
-  <label for="spirit">You</label><br>
-  
-  <!-- <input type="text"> defines a single-line text input field: -->
-  <input type="text" id="spirit" name="spirit"><br>
-  <label for="soul">Essence</label><br>
-  <input type="text" id="soul" name="soul"><br><br>
-  
-  <!-- <input type="submit"> defines a button for submitting data to form-handler -->
-  <input type="submit" value="Submit">
-</form>
+  <form action="/action_page.php">
+    <label for="spirit">You</label><br>
 
-<h2>Password input</h2>
+    <!-- <input type="text"> defines a single-line text input field: -->
+    <input type="text" id="spirit" name="spirit"><br>
+    <label for="soul">Essence</label><br>
+    <input type="text" id="soul" name="soul"><br><br>
 
-<form>
-  <label for="username">User:</label><br>
-  <input type="text" id="username" name="username"><br>
-  <label for="pwd">Pass:</label><br>
-  
-  <!-- <input type="password"> defines a password field: -->
-  <!-- Should only show dots when text in this field -->
-  <input type="password" id="pwd" name="pwd"><br><br>
-  
-  <!-- <input type="submit"> defines a button for submitting data to form-handler -->
-  <input type="submit" value="Submit">
-</form>
+    <!-- <input type="submit"> defines a button for submitting data to form-handler -->
+    <input type="submit" value="Submit">
+  </form>
 
-<h2> Reset input </h2>
+  <h2>Password input</h2>
 
-<form action="/action_page.php">
-  <label for="spirit">You</label><br>
-    
-  <!-- <input type="text"> defines a single-line text input field: -->
-  <input type="text" id="spirit" name="spirit"><br>
-  <label for="soul">Essence</label><br>
-  <input type="text" id="soul" name="soul"><br><br>
-    
-  <!-- <input type="submit"> defines a button for submitting data to form-handler -->
-  <input type="submit" value="Submit">
+  <form>
+    <label for="username">User:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">Pass:</label><br>
 
-  <!-- <input type="reset"> defines a reset button that will reset all form values -->
-  <input type="reset">
-</form>
+    <!-- <input type="password"> defines a password field: -->
+    <!-- Should only show dots when text in this field -->
+    <input type="password" id="pwd" name="pwd"><br><br>
 
-<h2>Choose your favorite game:</h2>
+    <!-- <input type="submit"> defines a button for submitting data to form-handler -->
+    <input type="submit" value="Submit">
+  </form>
 
-<!-- We used <input type="radio"> to define a radio button -->
-<form action="/action_page.php">
-  
-  <!-- <input type="radio"> will only give use one option to pick -->
-  <input type="radio" id="nfs" name="fav_game" value="NFS">
-  <label for="html">Need for Speed</label><br>
-  <input type="radio" id="cod" name="fav_game" value="COD">
-  <label for="css">Call of Duty</label><br>
-  <input type="radio" id="bf" name="fav_game" value="BF">
-  <label for="javascript">Battlefield</label><br><br>
-  <input type="submit" value="Submit">
-</form> 
+  <h2> Reset input </h2>
 
-<h2>Choose your favorite games:</h2>
-<!-- We used <input type="checkbox"> defines a checkbox. This can have zero and more options selected -->
-<form action="/action_page.php">
-  
+  <form action="/action_page.php">
+    <label for="spirit">You</label><br>
+
+    <!-- <input type="text"> defines a single-line text input field: -->
+    <input type="text" id="spirit" name="spirit"><br>
+    <label for="soul">Essence</label><br>
+    <input type="text" id="soul" name="soul"><br><br>
+
+    <!-- <input type="submit"> defines a button for submitting data to form-handler -->
+    <input type="submit" value="Submit">
+
+    <!-- <input type="reset"> defines a reset button that will reset all form values -->
+    <input type="reset">
+  </form>
+
+  <h2>Choose your favorite game:</h2>
+
+  <!-- We used <input type="radio"> to define a radio button -->
+  <form action="/action_page.php">
+
+    <!-- <input type="radio"> will only give use one option to pick -->
+    <input type="radio" id="nfs" name="fav_game" value="NFS">
+    <label for="html">Need for Speed</label><br>
+    <input type="radio" id="cod" name="fav_game" value="COD">
+    <label for="css">Call of Duty</label><br>
+    <input type="radio" id="bf" name="fav_game" value="BF">
+    <label for="javascript">Battlefield</label><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>Choose your favorite games:</h2>
+  <!-- We used <input type="checkbox"> defines a checkbox. This can have zero and more options selected -->
+  <form action="/action_page.php">
+
     <!-- <input type="checkbox"> will give us zero or more options -->
     <input type="checkbox" id="nfs" name="fav_game" value="NFS">
     <label for="html">Need for Speed</label><br>
@@ -75,48 +76,50 @@
     <input type="checkbox" id="bf" name="fav_game" value="BF">
     <label for="javascript">Battlefield</label><br><br>
     <input type="submit" value="Submit">
-  </form> 
+  </form>
 
-<h2>Click the Button:</h2>
-<!-- <input type="button"> makes an button -->
+  <h2>Click the Button:</h2>
+  <!-- <input type="button"> makes an button -->
   <input type="button" onclick="alert('You Shouldnt have clicked')" value="Don't Click Me!">
 
-<h2>Change the color</h2>
-<!-- <input type="color"> is used for input fields that have color -->
-<form action="/action_page.php">
-  <label for="favcolor">Select your fav color:</label>
-  
-  <!-- <input type="color"> used right here to make color -->
-  <input type="color" id="favcolor" name="favcolor" value="#ff4444">
-  <input type="submit" value="Submit">
-</form>
+  <h2>Change the color</h2>
+  <!-- <input type="color"> is used for input fields that have color -->
+  <form action="/action_page.php">
+    <label for="favcolor">Select your fav color:</label>
 
-<h2>Put in your date</h2>
+    <!-- <input type="color"> used right here to make color -->
+    <input type="color" id="favcolor" name="favcolor" value="#ff4444">
+    <input type="submit" value="Submit">
+  </form>
 
-<form action="/action_page.php">
-  <label for="Soulday">Bday:</label>
-  
-  <!-- <input type="date"> adds date input field  -->
-  <input type="date" id="Soulday" name="Soulday"><br><br>
-  <label for="maxSoulday">MaxDay is 2100-21-12:</label>
-  
-  <!-- can set a max date -->
-  <input type="date" id="Soulday" name="Soulday" max="2100-21-12"><br><br>
-  
-  <!-- can set a min date -->
-  <label for="minSoulday">MinDay is 2000-21-12:</label>
-  <input type="date" id="Soulday" name="Soulday" min="2000-21-12"><br><br>
-  <input type="submit" value="Submit">
-</form>
+  <h2>Put in your date</h2>
 
-<h2>Put in your local datetime</h2>
+  <form action="/action_page.php">
+    <label for="Soulday">Bday:</label>
 
-<form action="/action_page.php">
-  <label for="btime">Bday (date and time):</label>
-  <!-- <input type="datetime-local"> adds local time option along with date -->
-  <input type="datetime-local" id="btime" name="btime">
-  <input type="submit" value="Submit">
-</form>
+    <!-- <input type="date"> adds date input field  -->
+    <input type="date" id="Soulday" name="Soulday"><br><br>
+    <label for="maxSoulday">MaxDay is 2100-21-12:</label>
 
+    <!-- can set a max date -->
+    <input type="date" id="Soulday" name="Soulday" max="2100-21-12"><br><br>
+
+    <!-- can set a min date -->
+    <label for="minSoulday">MinDay is 2000-21-12:</label>
+    <input type="date" id="Soulday" name="Soulday" min="2000-21-12"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>Put in your local datetime</h2>
+
+  <form action="/action_page.php">
+    <label for="btime">Bday (date and time):</label>
+    <!-- <input type="datetime-local"> adds local time option along with date -->
+    <input type="datetime-local" id="btime" name="btime">
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+
+</html>
 <!-- The rest of the inputs are pretty clear on how you do them and will add more of them later what is going on. -->
-

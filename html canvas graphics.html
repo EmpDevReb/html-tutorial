@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<!-- <cavnas> element is used to draw graphics, on the fly, via javeScript -->
-<!-- <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphices -->
+  <!-- <cavnas> element is used to draw graphics, on the fly, via javeScript -->
+  <!-- <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphices -->
 
-<canvas id="myCanvas" width="250" height="125" style="border:1px solid rgb(59, 9, 9);">
-Your browser does not support the canvas tag.
-</canvas>
+  <canvas id="myCanvas" width="250" height="125" style="border:1px solid rgb(59, 9, 9);">
+    Your browser does not support the canvas tag.
+  </canvas>
 
-<!-- Image that will be drawn by Canvas -->
-<p>Image to use:</p>
-<img id="scream" src="No happy Endings.jpg" alt="No happy" width="500" height="222">
+  <!-- Image that will be drawn by Canvas -->
+  <p>Image to use:</p>
+  <img id="scream" src="No happy Endings.jpg" alt="No happy" width="500" height="222">
 
-<!-- Canvas will fill this when button is pressed -->
-<p>Canvas to fill:</p>
-<canvas id="Nohappy" width="1250" height="700"
-style="border:1px solid burlywood;">
-Your browser does not support the HTML canvas tag.</canvas>
+  <!-- Canvas will fill this when button is pressed -->
+  <p>Canvas to fill:</p>
+  <canvas id="Nohappy" width="1250" height="700" style="border:1px solid burlywood;">
+    Your browser does not support the HTML canvas tag.</canvas>
 
-<!-- This is the buttons lick to draw picture -->
-<p><button onclick="Nohappy()">No Happy Ends</button></p>
+  <!-- This is the buttons lick to draw picture -->
+  <p><button onclick="Nohappy()">No Happy Ends</button></p>
 
 
-<!-- This is a Linear Gradient -->
-<!-- <script>
+  <!-- This is a Linear Gradient -->
+  <!-- <script>
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     
@@ -38,8 +38,8 @@ Your browser does not support the HTML canvas tag.</canvas>
     ctx.fillRect(10, 10, 150, 80);
 </script> -->
 
-<!-- This is a Circular Gradient -->
-<!-- <script>
+  <!-- This is a Circular Gradient -->
+  <!-- <script>
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
     
@@ -53,50 +53,50 @@ Your browser does not support the HTML canvas tag.</canvas>
   ctx.fillRect(15, 15, 155, 90);
 </script> -->
 
-<!-- We drawing a line in canvas -->
-<script>
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  ctx.moveTo( 0, 0);
-  ctx.lineTo(250, 125);
-  ctx.stroke();
-</script>
+  <!-- We drawing a line in canvas -->
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0, 0);
+    ctx.lineTo(250, 125);
+    ctx.stroke();
+  </script>
 
-<!-- We drawing a circle in canvas -->
-<script>
+  <!-- We drawing a circle in canvas -->
+  <script>
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     ctx.beginPath();
     ctx.arc(95, 50, 40, 95, 2 * Math.PI);
     ctx.stroke();
-</script>
+  </script>
 
-<!-- We can do the draw of text too. -->
-<script>
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  ctx.font = "25px Arial";
-  ctx.fillText("Rocken Stone", 12, 45);
-</script>
+  <!-- We can do the draw of text too. -->
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "25px Arial";
+    ctx.fillText("Rocken Stone", 12, 45);
+  </script>
 
-<!-- We Stroke the text too -->
-<script>
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  ctx.font = "35px Arial";
-  ctx.strokeText("Rocken STONE", 1, 100);
-</script>
+  <!-- We Stroke the text too -->
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "35px Arial";
+    ctx.strokeText("Rocken STONE", 1, 100);
+  </script>
 
-<!-- Is is script to a button to draw in the picture -->
-<script>
-function Nohappy() {
-  var c = document.getElementById("Nohappy");
-  var ctx = c.getContext("2d");
-  var img = document.getElementById("scream");
-  ctx.drawImage(img,10,10);
-}
-</script>
-  
+  <!-- Is is script to a button to draw in the picture -->
+  <script>
+    function Nohappy() {
+      var c = document.getElementById("Nohappy");
+      var ctx = c.getContext("2d");
+      var img = document.getElementById("scream");
+      ctx.drawImage(img, 10, 10);
+    }
+  </script>
+
 </body>
+
 </html>
-    

@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h2>HTML action forms</h2>
+  <h2>HTML action forms</h2>
 
-<!-- Action attribute defines the action to be performed when the form is submitted. -->
-<form action="/action_page.php">
-  <label for="fname">Fake name:</label><br>
-  <input type="text" id="fname" name="fname" value="Jack"><br>
-  <label for="lname">Long name:</label><br>
-  <input type="text" id="lname" name="lname" value="Damn"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+  <!-- Action attribute defines the action to be performed when the form is submitted. -->
+  <form action="/action_page.php">
+    <label for="fname">Fake name:</label><br>
+    <input type="text" id="fname" name="fname" value="Jack"><br>
+    <label for="lname">Long name:</label><br>
+    <input type="text" id="lname" name="lname" value="Damn"><br><br>
+    <input type="submit" value="Submit">
+  </form>
 
-<p>If you click the "Submit" the form-data will be sent to a page called "/action_page.php".</p>
+  <p>If you click the "Submit" the form-data will be sent to a page called "/action_page.php".</p>
 
-<!-- the target attribute specifies where to display the response that is received after submitting the form -->
-<!-- _blank	   The response is displayed in a new window or tab
+  <!-- the target attribute specifies where to display the response that is received after submitting the form -->
+  <!-- _blank	   The response is displayed in a new window or tab
      _self	   The response is displayed in the current window
      _parent   The response is displayed in the parent frame
      _top	   The response is displayed in the full body of the window
      framename The response is displayed in a named iframe -->
-<form action="/action_page.php" target="_blank">
-  <label for="fname">Fake name:</label><br>
-  <input type="text" id="fname" name="fname" value="Jack"><br>
-  <label for="lname">Long name:</label><br>
-  <input type="text" id="lname" name="lname" value="Damn"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+  <form action="/action_page.php" target="_blank">
+    <label for="fname">Fake name:</label><br>
+    <input type="text" id="fname" name="fname" value="Jack"><br>
+    <label for="lname">Long name:</label><br>
+    <input type="text" id="lname" name="lname" value="Damn"><br><br>
+    <input type="submit" value="Submit">
+  </form>
 
-<!-- The method attribute specifies the HTTP method to be used when submitting form data. -->
-<!-- Can be Method="get" for sending URL variables -->
-<form action="/action_page.php" target="_blank" method="get">
-  <label for="fname">Fake name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Long name:</label><br>
-  <input type="text" id="lname" name="lname" value="Damn"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+  <!-- The method attribute specifies the HTTP method to be used when submitting form data. -->
+  <!-- Can be Method="get" for sending URL variables -->
+  <form action="/action_page.php" target="_blank" method="get">
+    <label for="fname">Fake name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Long name:</label><br>
+    <input type="text" id="lname" name="lname" value="Damn"><br><br>
+    <input type="submit" value="Submit">
+  </form>
 
-<!-- Or be method="post" for HTTP post transaction -->
-<form action="/action_page.php" target="_blank" method="post">
-  <label for="fname">Fake name:</label><br>
-  <input type="text" id="fname" name="fname" value="Jack"><br>
-  <label for="lname">Long name:</label><br>
-  <input type="text" id="lname" name="lname" value="Wick"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+  <!-- Or be method="post" for HTTP post transaction -->
+  <form action="/action_page.php" target="_blank" method="post">
+    <label for="fname">Fake name:</label><br>
+    <input type="text" id="fname" name="fname" value="Jack"><br>
+    <label for="lname">Long name:</label><br>
+    <input type="text" id="lname" name="lname" value="Wick"><br><br>
+    <input type="submit" value="Submit">
+  </form>
 
-<!-- The autocomplete attribute specifies whether a form should have autocomplete on or off. -->
-<form action="/action_page.php" autocomplete="on">
-  <label for="fname">Fake name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="email">Emailsss:</label>
-  <input type="text" id="email" name="email"><br><br>
-  <input type="submit">
-</form>
+  <!-- The autocomplete attribute specifies whether a form should have autocomplete on or off. -->
+  <form action="/action_page.php" autocomplete="on">
+    <label for="fname">Fake name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="email">Emailsss:</label>
+    <input type="text" id="email" name="email"><br><br>
+    <input type="submit">
+  </form>
 
-<!-- The novalidate attribute is a boolean attribute. -->
-<!-- When present, it specifies that the form-data (input) should not be validated when submitted -->
-<form action="/action_page.php" novalidate>
-  <label for="email">Enter your fakemail:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <input type="submit">
-</form>
+  <!-- The novalidate attribute is a boolean attribute. -->
+  <!-- When present, it specifies that the form-data (input) should not be validated when submitted -->
+  <form action="/action_page.php" novalidate>
+    <label for="email">Enter your fakemail:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit">
+  </form>
 
 </body>
+
 </html>

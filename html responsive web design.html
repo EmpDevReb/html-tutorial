@@ -1,89 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<!-- Setting the view port -->
-<!-- Does nothing but set it up -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--  We adding sytle for the Media Queries -->
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  .left {
-    background-color: #2196F3;
-    padding: 20px;
-    float: left;
-    width: 30%; /* The width is 30% */
-  }
-  
-  .main {
-    background-color: #f1f1f1;
-    padding: 20px;
-    float: left;
-    width: 40%; /* The width is 60%, by default */
-  }
-  
-  .right {
-    background-color: #04AA6D;
-    padding: 20px;
-    float: left;
-    width: 30%; /* The width is 20%, by default */
-  }
-  
-  /* Use a media query to add a break point at 800px: */
-  @media screen and (max-width: 800px) {
-    .left, .main, .right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  <!-- Setting the view port -->
+  <!-- Does nothing but set it up -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  We adding sytle for the Media Queries -->
+  <style>
+    * {
+      box-sizing: border-box;
     }
-  }
+
+    .left {
+      background-color: #2196F3;
+      padding: 20px;
+      float: left;
+      width: 30%;
+      /* The width is 30% */
+    }
+
+    .main {
+      background-color: #f1f1f1;
+      padding: 20px;
+      float: left;
+      width: 40%;
+      /* The width is 60%, by default */
+    }
+
+    .right {
+      background-color: #04AA6D;
+      padding: 20px;
+      float: left;
+      width: 30%;
+      /* The width is 20%, by default */
+    }
+
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width: 800px) {
+
+      .left,
+      .main,
+      .right {
+        width: 100%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<h2>Responsive Imagesssss</h2>
-<p>The CSS will be set up for speed of the image. The Image will size up and down as you mess with the size of the broswer window.</p>
+  <h2>Responsive Imagesssss</h2>
+  <p>The CSS will be set up for speed of the image. The Image will size up and down as you mess with the size of the
+    broswer window.</p>
 
-<!-- We can doing this style will allow resizing. Added Max Width. Will scale down -->
-<img src="911 GT2 RS.jpg" style="width:100%;">
+  <!-- We can doing this style will allow resizing. Added Max Width. Will scale down -->
+  <img src="911 GT2 RS.jpg" style="width:100%;">
 
-<!-- We can doing this style will allow resizing. Added Max Width. Will scale down -->
-<img src="So it begins.gif" style="max-width:100%;height:auto;">
+  <!-- We can doing this style will allow resizing. Added Max Width. Will scale down -->
+  <img src="So it begins.gif" style="max-width:100%;height:auto;">
 
-<h2>Show Different Images Depending width of the Browser</h2>
-<p>Resize the browser width and the image will change at 400px and 1000px.</p>
+  <h2>Show Different Images Depending width of the Browser</h2>
+  <p>Resize the browser width and the image will change at 400px and 1000px.</p>
 
-<picture>
-<!-- This is the small image -->
-  <source srcset="images/SP logo.gif" media="(max-width: 400px)">
-  <source srcset="images/Porsche.jpg" media="(max-width: 1000px)">
-  <source srcset="images/Book 2 cover ideas 2.jpg">
-  <img src="images/Book 2 cover ideas 2.jpg" alt="books" style="width:auto;">
-</picture>
+  <picture>
+    <!-- This is the small image -->
+    <source srcset="images/SP logo.gif" media="(max-width: 400px)">
+    <source srcset="images/Porsche.jpg" media="(max-width: 1000px)">
+    <source srcset="images/Book 2 cover ideas 2.jpg">
+    <img src="images/Book 2 cover ideas 2.jpg" alt="books" style="width:auto;">
+  </picture>
 
-<!-- This Responsive Text -->
-<!-- the vw unit means viewport width so it will follow broswer window -->
-<h1 style="font-size:13vw;">Responsive Text It Changes</h1>
+  <!-- This Responsive Text -->
+  <!-- the vw unit means viewport width so it will follow broswer window -->
+  <h1 style="font-size:13vw;">Responsive Text It Changes</h1>
 
-<p style="font-size:7vw;">Resize the browser window it will adjust.</p>
+  <p style="font-size:7vw;">Resize the browser window it will adjust.</p>
 
-<!-- The is the Media Queries -->
+  <!-- The is the Media Queries -->
 
-<h1 style="font-size:10vw;">This Media Queries will rezies</h1>
+  <h1 style="font-size:10vw;">This Media Queries will rezies</h1>
 
-<div class="left">
-  <p>Left ZONE</p>
-</div>
+  <div class="left">
+    <p>Left ZONE</p>
+  </div>
 
-<div class="main">
-  <p>Main ZONE</p>
-</div>
+  <div class="main">
+    <p>Main ZONE</p>
+  </div>
 
-<div class="right">
-  <p>Right EDGE</p>
-</div>
+  <div class="right">
+    <p>Right EDGE</p>
+  </div>
 
-<!-- Skiped Boot Strap and W3.CSS demos since I will role into CSS soon -->
+  <!-- Skiped Boot Strap and W3.CSS demos since I will role into CSS soon -->
 
 </body>
+
 </html>

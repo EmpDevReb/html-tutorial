@@ -1,108 +1,117 @@
 <!DOCTYPE html>
 <html>
 <style>
-/* This CSS Property is on the table, th, and td */
-/* You can remove table from the CSS selector to removed that border */
-table, th, td {
-  border:2px solid grey;
-  /* Use the border-collapse to collapse property to make a single border */
-  border-collapse: collapse;
-  
-  /* Round borders on tables */
-  /* border-radius: 12px; */
+  /* This CSS Property is on the table, th, and td */
+  /* You can remove table from the CSS selector to removed that border */
+  table,
+  th,
+  td {
+    border: 2px solid grey;
+    /* Use the border-collapse to collapse property to make a single border */
+    border-collapse: collapse;
 
-  /* border-style property can change apearance as in: */
-  /* dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden */
-  border-style: dashed;
-  
+    /* Round borders on tables */
+    /* border-radius: 12px; */
 
-}
+    /* border-style property can change apearance as in: */
+    /* dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden */
+    border-style: dashed;
 
-/* We can style borders or cells */
-th, td {
-/* background-color: lightblue; */
-/* We can can also do border colors*/
-border-color: navy;
-/* Cell padding can be added by the padding property */
-/* padding: 10px; */
-/* It can get more refined than just genral padding */
-padding-top: 9px;
-padding-bottom: 22px;
-padding-left: 33px;
-padding-right: 44px;
-}
 
-/* Align Table Headers */
-th {
-  text-align: center;
-}
-/* Cell Spacing between each cell */
-/* We use the border-spacing property on the table element */
-table {
-  border-spacing: 150px;
-}
-/* Zebra Stripes style row with :nth-child(even) selector */
-/* tr:nth-child(even) { */
-    /* Can define Odds or Evens */
+  }
+
+  /* We can style borders or cells */
+  th,
+  td {
+    /* background-color: lightblue; */
+    /* We can can also do border colors*/
+    border-color: navy;
+    /* Cell padding can be added by the padding property */
+    /* padding: 10px; */
+    /* It can get more refined than just genral padding */
+    padding-top: 9px;
+    padding-bottom: 22px;
+    padding-left: 33px;
+    padding-right: 44px;
+  }
+
+  /* Align Table Headers */
+  th {
+    text-align: center;
+  }
+
+  /* Cell Spacing between each cell */
+  /* We use the border-spacing property on the table element */
+  table {
+    border-spacing: 150px;
+  }
+
+  /* Zebra Stripes style row with :nth-child(even) selector */
+  /* tr:nth-child(even) { */
+  /* Can define Odds or Evens */
   /* background-color: lightblue; */
-/* } */
+  /* } */
 
-/* This is Columns instead */
-td:nth-child(even), th:nth-child(even) {
-  background-color: lightblue;
-}
+  /* This is Columns instead */
+  td:nth-child(even),
+  th:nth-child(even) {
+    background-color: lightblue;
+  }
 
-/* This makes color happen when you hover over a row with the hover selector */
-tr:hover {background-color: plum;}
-
+  /* This makes color happen when you hover over a row with the hover selector */
+  tr:hover {
+    background-color: plum;
+  }
 </style>
+
 <body>
 
-<h2>A basic HTML table</h2>
-<!-- Table Width can be done with the style attribute in the <table> element -->
-<table style="width:100%">
-<!-- Table Caption via <caption> tag -->
-  <caption>Superheros</caption>
-<!-- tr stands for table row -->
-  <tr>
-<!-- th stands for table header -->
-<!-- We can have headers for colum or rows, or many colums/rows.  -->
-    <th>Universe</th>
-    <!-- We can change the first width column to 69% with style attribute -->
-    <!-- Added colspan attribute for persona to cover two columes -->
-    <th colspan="2" style="width:69%">Persona</th>
-    
-    <th>Person</th>
-    <th>City</th>
-  </tr>
-  <!-- Table row height can be changes with style attribute as well -->
-  <tr style="height: 188px;">
-    <!-- This is a vertical header -->
-    <th>DC</th>
-    <!-- td stands for table data -->
-    <td>Batman</td>
-    <td>Scary CrimeFighter</td>
-    <td>Bruce Wayne</td>
-    <td>Gothem City</td>
-  </tr>
-  <tr>
-    <!-- This is a vertical header too -->
-    <!-- This header will span two heros with rowspan attribute -->
-    <th rowspan="2">Marvel</th>
-    <td>Neiborhood Crimefighter</td>
-    <td>Spidey</td>
-    <td>Peter Parker</td>
-    <td>Queens, New York</td>
-  </tr>
+  <h2>A basic HTML table</h2>
+  <!-- Table Width can be done with the style attribute in the <table> element -->
+  <table style="width:100%">
+    <!-- Table Caption via <caption> tag -->
+    <caption>Superheros</caption>
+    <!-- tr stands for table row -->
+    <tr>
+      <!-- th stands for table header -->
+      <!-- We can have headers for colum or rows, or many colums/rows.  -->
+      <th>Universe</th>
+      <!-- We can change the first width column to 69% with style attribute -->
+      <!-- Added colspan attribute for persona to cover two columes -->
+      <th colspan="2" style="width:69%">Persona</th>
+
+      <th>Person</th>
+      <th>City</th>
+    </tr>
+    <!-- Table row height can be changes with style attribute as well -->
+    <tr style="height: 188px;">
+      <!-- This is a vertical header -->
+      <th>DC</th>
+      <!-- td stands for table data -->
+      <td>Batman</td>
+      <td>Scary CrimeFighter</td>
+      <td>Bruce Wayne</td>
+      <td>Gothem City</td>
+    </tr>
+    <tr>
+      <!-- This is a vertical header too -->
+      <!-- This header will span two heros with rowspan attribute -->
+      <th rowspan="2">Marvel</th>
+      <td>Neiborhood Crimefighter</td>
+      <td>Spidey</td>
+      <td>Peter Parker</td>
+      <td>Queens, New York</td>
+    </tr>
     <!-- This will be under the Marvel Row. -->
     <td>Hungry Crimefighter</td>
     <td>Vemon</td>
     <td>Eddie Brock</td>
     <td>Manhattan, New York</td>
 
-</table>
+  </table>
 
-<p>To Make it clear we have tables there is borders around tables of the BATMAN AND SPIDEY</p>
+  <p>To Make it clear we have tables there is borders around tables of the BATMAN AND SPIDEY</p>
 
 </body>
+
 </html>

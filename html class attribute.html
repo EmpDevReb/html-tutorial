@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style> 
-/* Create the Class with period . character followed by class name and define CSS properity within curly */
-/* Defined class value */
-.Capitalcity {
-  background-color: lightslategray;
-  color: lightcyan;
-  border: 4px solid navy;
-  margin: 30px;
-  padding: 30px;
-}
+  <style>
+    /* Create the Class with period . character followed by class name and define CSS properity within curly */
+    /* Defined class value */
+    .Capitalcity {
+      background-color: lightslategray;
+      color: lightcyan;
+      border: 4px solid navy;
+      margin: 30px;
+      padding: 30px;
+    }
 
-.Nation{
-color: aqua;
-}
+    .Nation {
+      color: aqua;
+    }
 
-.Planet{
-text-align: center;
-}
-/* Using this for <span> class */
-.note {
-    font-size: 66%;
-    color: purple;
-}
-</style>
+    .Planet {
+      text-align: center;
+    }
+
+    /* Using this for <span> class */
+    .note {
+      font-size: 66%;
+      color: purple;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Class Attribute -->
-<!-- class is used to point to a class name in a style sheet -->
-<div class="Capitalcity">
-  <!-- Can use <span> with class attribut with note -->
-  <h2 class="Planet"><span class="note">Hawaii</span> City</h2>
-  <p>Nova is the capital of England.</p>
-</div>
+  <!-- Class Attribute -->
+  <!-- class is used to point to a class name in a style sheet -->
+  <div class="Capitalcity">
+    <!-- Can use <span> with class attribut with note -->
+    <h2 class="Planet"><span class="note">Hawaii</span> City</h2>
+    <p>Nova is the capital of England.</p>
+  </div>
 
-<div class="Capitalcity">
-  <h2 class="Planet">Defiance</h2>
-  <p>Defiance is the capital of Takavin.</p>
-</div>
+  <div class="Capitalcity">
+    <h2 class="Planet">Defiance</h2>
+    <p>Defiance is the capital of Takavin.</p>
+  </div>
 
-<div class="Capitalcity">
-  <!-- Can have Mulitple class at once -->
-  <h2 class="Planet Nation">DC</h2>
-  <!-- Different Elements can share the Same class -->
-  <p class="Planet Nation">DC is the capital of USAR.</p>
-</div>
-<!-- Can use JavaScrip with getElementsByClassName() method -->
-<button onclick="myFunction()">Hide elements</button>
-<script>
-function myFunction() {
-    var x = document.getElementsByClassName("Nation");
-    for (var i = 0; i < x.length; i++) {
+  <div class="Capitalcity">
+    <!-- Can have Mulitple class at once -->
+    <h2 class="Planet Nation">DC</h2>
+    <!-- Different Elements can share the Same class -->
+    <p class="Planet Nation">DC is the capital of USAR.</p>
+  </div>
+  <!-- Can use JavaScrip with getElementsByClassName() method -->
+  <button onclick="myFunction()">Hide elements</button>
+  <script>
+    function myFunction() {
+      var x = document.getElementsByClassName("Nation");
+      for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
-        }
+      }
     }
-</script>
+  </script>
 
 </body>
+
 </html>
