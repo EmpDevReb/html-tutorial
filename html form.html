@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- An html <form> is used to collect user input. -->
+<form>
+  <label for="fname">Fake name:</label><br>
+<!-- <input> element can be displayed in many ways, depending type attribute -->
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Long name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+  
+  <p>Form itself is not visible.</p>
+
+  <p>Also note that the default width of text input fields is 20 characters.</p>
+  
+<p>Choose your favorite Game :</p>
+
+<!-- Radio Buttons
+The <input type="radio"> defines a radio button. Radio buttons let a user select ONE of a limited number of choices. -->
+  <form>
+    <input type="radio" id="Final Fansity XVI" name="fav_game" value="Final Fansity XVI">
+    <label for="html">Final Fansity XVI</label><br>
+    <input type="radio" id="Tears of the Kingdom" name="fav_game" value="Tears of the Kingdom">
+    <label for="Tears of the Kingdom">Tears of the Kingdom</label><br>
+    <input type="radio" id="Starfield" name="fav_game" value="Starfield">
+    <label for="javascript">Starfield</label>
+  </form>
+
+<h2>Checkboxes</h2>
+
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<!-- Checkboxes
+The <input type="checkbox"> defines a checkbox. Checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a Motorcycle</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a Supers</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a Spaceship</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<!-- This is HTML FORMs with Submit button -->
+
+<form action="/action_page.php">
+  <label for="fname">Fake name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Long name:</label><br>
+  <input type="text" id="lname" name="lname" value="Wick"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>"Submit" will send the form-data  to a page called "/action_page.php".</p>
+  
+<!-- Name Attribut for <input> must have name attribute to be submitted. -->
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fnames" value="wiek"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
