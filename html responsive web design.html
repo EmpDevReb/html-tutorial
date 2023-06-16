@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Setting the view port -->
+<!-- Does nothing but set it up -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Responsive Imagesssss</h2>
+<p>The CSS will be set up for speed of the image. The Image will size up and down as you mess with the size of the broswer window.</p>
+
+<!-- We can doing this style will allow resizing. Added Max Width. Will scale down -->
+<img src="911 GT2 RS.jpg" style="width:100%;">
+
+<!-- We can doing this style will allow resizing. Added Max Width. Will scale down -->
+<img src="So it begins.gif" style="max-width:100%;height:auto;">
+
+<h2>Show Different Images Depending width of the Browser</h2>
+<p>Resize the browser width and the image will change at 400px and 1000px.</p>
+
+<picture>
+<!-- This is the small image -->
+  <source srcset="images/SP logo.gif" media="(max-width: 400px)">
+  <source srcset="images/Porsche.jpg" media="(max-width: 1000px)">
+  <source srcset="images/Book 2 cover ideas 2.jpg">
+  <img src="images/Book 2 cover ideas 2.jpg" alt="books" style="width:auto;">
+</picture>
+
+</body>
+</html>
