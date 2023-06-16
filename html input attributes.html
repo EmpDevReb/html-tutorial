@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h1>The input value attribute at default</h1>
+  <h1>The input value attribute at default</h1>
 
-<p>The value attribute:</p>
+  <p>The value attribute:</p>
 
-<form action="/action_page.php">
-  <label for="Tname">The NAME:</label><br>
-  <!-- The value attribute give a name in generated field -->
-  <input type="text" id="Tname" name="Tname" value="Jack"><br>
-  <label for="Ename">End Name:</label><br>
-  <input type="text" id="Ename" name="Ename" value="Wick"><br><br>
-  <input type="submit" value="Submit">
-</form>
+  <form action="/action_page.php">
+    <label for="Tname">The NAME:</label><br>
+    <!-- The value attribute give a name in generated field -->
+    <input type="text" id="Tname" name="Tname" value="Jack"><br>
+    <label for="Ename">End Name:</label><br>
+    <input type="text" id="Ename" name="Ename" value="Wick"><br><br>
+    <input type="submit" value="Submit">
+  </form>
 
-<p>The readonly attribute:</p>
+  <p>The readonly attribute:</p>
 
-<form action="/action_page.php">
-  <label for="Tname">The NAME:</label><br>
-  <!-- The readonly attribute is read-only input field -->
-  <input type="text" id="Tname" name="Tname" value="Jack" readonly><br>
-  <label for="Ename">End Name:</label><br>
-  <input type="text" id="Ename" name="Ename" value="Wick"><br><br>
-  <input type="submit" value="Submit">
-</form>
-  
+  <form action="/action_page.php">
+    <label for="Tname">The NAME:</label><br>
+    <!-- The readonly attribute is read-only input field -->
+    <input type="text" id="Tname" name="Tname" value="Jack" readonly><br>
+    <label for="Ename">End Name:</label><br>
+    <input type="text" id="Ename" name="Ename" value="Wick"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>The disabled attribute:</p> 
+
+  <form action="/action_page.php">
+    <label for="Tname">The NAME:</label><br>
+    <!-- This is disabled attribute the text field -->
+    <input type="text" id="Tname" name="Tname" value="Jack" disabled><br>
+    <label for="Ename">End Name:</label><br>
+    <input type="text" id="Ename" name="Ename" value="Wick"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>The size attribute:</p>
+
+  <form action="/action_page.php">
+    <label for="Tname">The NAME:</label><br>
+    <!-- This is size attribute to size text field -->
+    <input type="text" id="Tname" name="Tname" value="Jack" size="40"><br>
+    <label for="Ename">End Name:</label><br>
+    <input type="text" id="Ename" name="Ename" value="Wick" size="6"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>The maxlength, max and min attribute:</p>
+
+  <form action="/action_page.php">
+    <label for="Tname">The NAME:</label><br>
+    <input type="text" id="Tname" name="Tname" value="Jack" maxlenght="12"  size="40"><br>
+    <label for="Ename">End Name:</label><br>
+    <input type="text" id="Ename" name="Ename" value="Wick" maxlength="4"  size="6"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- This mulitiple attribute accepts mutiple files to up load. -->
+  <form>
+    <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple>
+  </form>
+
+  <!-- And many more attributes. -->
 
 </body>
+
 </html>
