@@ -4,6 +4,40 @@
 <!-- Setting the view port -->
 <!-- Does nothing but set it up -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  We adding sytle for the Media Queries -->
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .left {
+    background-color: #2196F3;
+    padding: 20px;
+    float: left;
+    width: 30%; /* The width is 30% */
+  }
+  
+  .main {
+    background-color: #f1f1f1;
+    padding: 20px;
+    float: left;
+    width: 40%; /* The width is 60%, by default */
+  }
+  
+  .right {
+    background-color: #04AA6D;
+    padding: 20px;
+    float: left;
+    width: 30%; /* The width is 20%, by default */
+  }
+  
+  /* Use a media query to add a break point at 800px: */
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  </style>
 </head>
 <body>
 
@@ -26,6 +60,30 @@
   <source srcset="images/Book 2 cover ideas 2.jpg">
   <img src="images/Book 2 cover ideas 2.jpg" alt="books" style="width:auto;">
 </picture>
+
+<!-- This Responsive Text -->
+<!-- the vw unit means viewport width so it will follow broswer window -->
+<h1 style="font-size:13vw;">Responsive Text It Changes</h1>
+
+<p style="font-size:7vw;">Resize the browser window it will adjust.</p>
+
+<!-- The is the Media Queries -->
+
+<h1 style="font-size:10vw;">This Media Queries will rezies</h1>
+
+<div class="left">
+  <p>Left ZONE</p>
+</div>
+
+<div class="main">
+  <p>Main ZONE</p>
+</div>
+
+<div class="right">
+  <p>Right EDGE</p>
+</div>
+
+<!-- Skiped Boot Strap and W3.CSS demos since I will role into CSS soon -->
 
 </body>
 </html>
